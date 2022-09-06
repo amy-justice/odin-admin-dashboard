@@ -192,3 +192,15 @@ button:hover {
     background-image: url(images/chevron-down.png);
     opacity: 0.5;
 }
+
+.sidebar-header {
+    font-size: 28px;
+    color:hsl(0, 0%, 95%);
+    font-weight: 400;
+    height: 100px;
+    padding-left: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 20px;
+}
