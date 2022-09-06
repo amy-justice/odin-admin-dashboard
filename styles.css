@@ -209,20 +209,22 @@ button:hover {
 }
 
 .link-container {
-    padding-left: 40px;
+    width: 100%;
     color: hsl(0, 0%, 95%);
     font-size: 22px;
 }
 
 .sidebar-link {
+    padding: 8px 0;
+    padding-left: 40px;
     display: grid;
     grid-template-columns: 40px 2fr;
     align-items: center;
-    margin: 15px 0;
 }
 
 .sidebar-link:hover {
     cursor: pointer;
+    background-color: hsl(217, 48%, 60%)
 }
 
 .sidebar-link img {
