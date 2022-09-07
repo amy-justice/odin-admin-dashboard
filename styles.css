@@ -63,6 +63,24 @@ body {
     box-shadow: 0px 4px 6px rgba(45,45,45,0.1);
 }
 
+.dashboard-box.big {
+    display: grid;
+    grid-template-rows: 70px 100px 20px;
+    grid-template-columns: auto;
+}
+
+.dashboard-box.green {
+    border-left: solid 10px hsl(122, 45%, 75%);
+}
+
+.dashboard-box.yellow {
+    border-left: solid 10px hsl(45, 75%, 72%);
+}
+
+.dashboard-box.red {
+    border-left: solid 10px hsl(3, 85%, 72%);
+}
+
 #right-column {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -230,4 +248,97 @@ button:hover {
 .sidebar-link img {
     width: 28px;
     margin-right: 15px;
+}
+
+.box-title {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.box-desc {
+    color: hsl(0,0%, 50%);
+}
+
+.box-actions {
+    text-align: right;
+}
+
+.box-actions img {
+    margin: 0 10px;
+    opacity: 0.5;
+}
+
+.box-actions img:hover {
+    cursor: pointer;
+}
+
+.sm-box-title {
+    font-size: 22px;
+
+}
+
+.sm-box-header {
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.sm-box-message {
+    font-size: 14px;
+    color:hsl(0,0%, 50%);
+    padding-bottom: 15px;
+    border-bottom: 2px solid hsl(0,0%, 85%);
+    border-radius: 5px;
+}
+
+.sm-box-update {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 25px 25px;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.update-avatar {
+    grid-area: 1 / 1 / 3 / 2;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-size: 35px 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.update-avatar.elephant {
+    background-image: url(images/elephant.png);
+    background-color: hsl(35, 75%, 65%);
+}
+
+.update-avatar.shark {
+    background-image: url(images/shark.png);
+    background-color: hsl(293, 32%, 65%);
+}
+
+.update-avatar.kiwi {
+    background-image: url(images/kiwi.png);
+    background-color: hsl(183, 39%, 65%);
+}
+
+.update-avatar.flamingo {
+    background-image: url(images/flamingo.png);
+    background-color: hsl(228, 46%, 65%);
+}
+
+.update-name {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: -5px;
+}
+
+.update-desc {
+    font-size: 14px;
+    color:hsl(0, 0%, 50%);
+    margin-top: -8px;
 }
